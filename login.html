@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Style The Dropdown Button */
+        .dropbtn {
+          background-color: rgb(63, 59, 59);
+          color: white;
+          padding: 15px;
+          font-size: 25px;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          font-family: 'Overpass', sans-serif;
+          font-family: 'Rozha One', serif;
+          margin: 10px;
+          padding-left: 40px;
+          padding-right: 40px;
+        }
+        
+        /* The container <div> - needed to position the dropdown content */
+        .dropdown {
+          position: relative;
+          display: inline-block;
+        }
+        
+        /* Dropdown Content (Hidden by Default) */
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: rgb(63, 59, 59);
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+          padding: 12px 16px;
+        }
+        
+        /* Links inside the dropdown */
+        .dropdown-content a {
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+        }
+        
+        /* Change color of dropdown links on hover */
+        .dropdown-content a:hover {
+            color: white;
+            background-color: #f1f1f1
+            -webkit-transform:scale(0.8);
+    -ms-transform: scale(0.8);
+     transform: scale(0.8);
+        
+        }
+        
+        /* Show the dropdown menu on hover */
+        .dropdown:hover .dropdown-content {
+          display: block;
+        }
+        
+        /* Change the background color of the dropdown button when the dropdown content is shown */
+        .dropdown:hover .dropbtn {
+           background-color: cadetblue;
+  -webkit-transform: scale(0.8);
+-ms-transform: scale(0.8);
+transform: scale(0.8);
+        }
+        </style>
+</head>
+<body>
+    <header class="headertvshows">
+        <div class="dropdown">
+            <button class="dropbtn">Menu</button>
+            <div class="dropdown-content">
+              <a href="./main.html">Main page</a>
+              <a href="./movies.html">Movies</a>
+              <a href="./tvshows.html">Tv Shows</a>
+            </div>
+          </div>
+        
+    </header>
+    <div class="boxbackground">
+        <h2>Login</h2>
+    <div class="boxlogin">
+        <label for="email">Email</label></br>
+        <input type="text"name="email"/>
+    
+</div>
+<div class="boxlogin2">
+    <label for="pass">Password</label></br>
+    <input type="password"name="pass"/></br>
+
+</div>
+<div class="boxbuttons">
+    <input  type="submit" value="Done">
+    <input type="reset" value="reset">
+</div>
+</div>
+</body>
+</html>
